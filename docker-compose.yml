@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  api_nba_service:
+      build: ./api_nba_service
+      ports:
+          - 8000:8000
+      volumes:
+          - ./api_nba_service:/src
+      container_name: api_nba_service
